@@ -97,6 +97,8 @@ body {
   border-radius: 16px;
   scroll-snap-align: start;
   transition: transform 0.4s ease, box-shadow 0.4s ease;
+  object-fit: contain;
+  max-height: 400px;
 }
 
 .carousel img:hover {

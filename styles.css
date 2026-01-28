@@ -1,0 +1,122 @@
+:root {
+  --navy: #0a1f44;
+  --light-gray: #f7f9fc;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: white;
+  color: var(--navy);
+  scroll-behavior: smooth;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+
+.hero span {
+  color: #1f4fff;
+}
+
+.hero p {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+
+.scroll-indicator {
+  position: absolute;
+  bottom: 30px;
+  font-size: 0.9rem;
+  opacity: 0.6;
+}
+
+/* SECTIONS */
+.portfolio-section {
+  padding: 120px 10%;
+}
+
+.portfolio-section h2 {
+  font-size: 2.4rem;
+  margin-bottom: 60px;
+  border-left: 6px solid #1f4fff;
+  padding-left: 16px;
+}
+
+/* PROJECT */
+.project {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 60px;
+  align-items: center;
+  margin-bottom: 120px;
+}
+
+.project-info h3 {
+  font-size: 1.6rem;
+  margin-bottom: 16px;
+}
+
+.project-info p {
+  line-height: 1.7;
+  color: #334;
+}
+
+/* CAROUSEL */
+.carousel {
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 20px;
+}
+
+.carousel img {
+  width: 100%;
+  max-width: 420px;
+  border-radius: 16px;
+  scroll-snap-align: start;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.carousel img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+/* FADE IN */
+.fade-in {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.9s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .project {
+    grid-template-columns: 1fr;
+  }
+}

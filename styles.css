@@ -101,7 +101,7 @@ body {
 }
 
 .carousel img:hover {
-  opacity: 0.7;
+  filter: brightness(105%);
   transform: scale(1.1);
 }
 

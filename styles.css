@@ -82,6 +82,9 @@ body {
 .carousel {
   overflow-x: auto;
   scroll-snap-type: x mandatory;
+  overflow-y: none;
+  scrollbar-color: dark grey;
+  scrollbar-width: thin;
 }
 
 .carousel-track {

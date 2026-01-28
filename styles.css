@@ -55,8 +55,12 @@ body {
 .portfolio-section h2 {
   font-size: 2.4rem;
   margin-bottom: 60px;
-  border-left: 6px solid var(--navy);
   padding-left: 16px;
+  background-image: radial-gradient(#f2deb4, #dcb075);
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }
 
 /* PROJECT */

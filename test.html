@@ -1,96 +1,229 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Good Aesthetic Club - Replica</title>
-    <link rel="stylesheet" href="styletest.css">
-    <!-- Google Fonts for Clean Typography -->
-    <link rel="preconnect" href="https://googleapis.com">
-    <link rel="preconnect" href="https://gstatic.com" crossorigin>
-    <link href="https://googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Good Aesthetic Club</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <!-- Header Section -->
-    <header class="site-header">
-        <div class="logo">Good Aesthetic Club</div>
-        <p class="tagline">Beautiful & thoughtfully crafted technology, homeware & carry products.</p>
-        
-        <!-- Navigation Categories -->
-        <nav class="category-nav">
-            <ul>
-                <li><a href="#" class="active">Latest</a></li>
-                <li><a href="#">Carry</a></li>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Tech</a></li>
-                <li><a href="#">Workspace</a></li>
-            </ul>
-        </nav>
+  <div class="container">
+
+    <!-- Header -->
+    <header class="header">
+      <a href="/" class="logo">
+        <img src="https://goodaesthetic.club/wp-content/themes/good-aesthetic/theme/assets/img/ga-logo.svg" alt="Good Aesthetic Club">
+      </a>
+
+      <nav>
+        <ul class="main-menu">
+          <li><a href="#" class="active">Latest</a></li>
+          <li><a href="#">Carry</a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Tech</a></li>
+          <li><a href="#">Workspace</a></li>
+        </ul>
+      </nav>
     </header>
 
-    <!-- Main Product Grid -->
-    <main class="grid-container">
-        <!-- Card 1 -->
-        <div class="product-card">
-            <div class="image-placeholder"></div>
-            <div class="product-info">
-                <span class="brand">Fractal Design</span>
-                <h3 class="product-name">North Mid ATX Tower Case</h3>
-            </div>
-        </div>
 
-        <!-- Card 2 -->
-        <div class="product-card">
-            <div class="image-placeholder"></div>
-            <div class="product-info">
-                <span class="brand">NuPhy</span>
-                <h3 class="product-name">NuPhy Air75</h3>
-            </div>
-        </div>
+    <!-- Product Grid -->
+    <main class="product-grid">
 
-        <!-- Card 3 -->
-        <div class="product-card">
-            <div class="image-placeholder"></div>
-            <div class="product-info">
-                <span class="brand">RAICO</span>
-                <h3 class="product-name">Walnut Headphone Stand</h3>
-            </div>
-        </div>
+      <div class="intro-card">
+        Beautiful & thoughtfully crafted technology, homeware & carry products.
+      </div>
 
-        <!-- Card 4 -->
-        <div class="product-card">
-            <div class="image-placeholder"></div>
-            <div class="product-info">
-                <span class="brand">Huskee</span>
-                <h3 class="product-name">Huskee Cappuccino Cups</h3>
-            </div>
+      <a class="product-card" href="#" target="_blank">
+        <div class="product-image">
+          <img src="https://goodaesthetic.club/wp-content/uploads/2025/05/coffee-club-print.png" alt="Coffee Club Print">
         </div>
+        <div class="product-info">
+          <div class="brand">Lune Club</div>
+          <div>Coffee Club Print</div>
+        </div>
+      </a>
 
-        <!-- Card 5 -->
-        <div class="product-card">
-            <div class="image-placeholder"></div>
-            <div class="product-info">
-                <span class="brand">Logitech</span>
-                <h3 class="product-name">MX Master 3S</h3>
-            </div>
+      <a class="product-card" href="#" target="_blank">
+        <div class="product-image">
+          <img src="https://goodaesthetic.club/wp-content/uploads/2025/05/fractaldesign-north.png" alt="North Mid ATX Tower Case">
         </div>
+        <div class="product-info">
+          <div class="brand">Fractal Design</div>
+          <div>North Mid ATX Tower Case</div>
+        </div>
+      </a>
 
-        <!-- Card 6 -->
-        <div class="product-card">
-            <div class="image-placeholder"></div>
-            <div class="product-info">
-                <span class="brand">Analogue</span>
-                <h3 class="product-name">Analogue Pocket</h3>
-            </div>
+      <a class="product-card" href="#" target="_blank">
+        <div class="product-image">
+          <img src="https://goodaesthetic.club/wp-content/uploads/2025/05/nuphy-air75.png" alt="NuPhy Air75">
         </div>
+        <div class="product-info">
+          <div class="brand">NuPhy</div>
+          <div>NuPhy Air75</div>
+        </div>
+      </a>
+
+      <a class="product-card" href="#" target="_blank">
+        <div class="product-image">
+          <img src="https://goodaesthetic.club/wp-content/uploads/2024/05/underarmour-pride.png" alt="HOVR Phantom PRIDE">
+        </div>
+        <div class="product-info">
+          <div class="brand">Under Armour</div>
+          <div>HOVR Phantom PRIDE</div>
+        </div>
+      </a>
+
+      <a class="product-card" href="#" target="_blank">
+        <div class="product-image">
+          <img src="https://goodaesthetic.club/wp-content/uploads/2024/05/aqara-g4.png" alt="G4 Doorbell">
+        </div>
+        <div class="product-info">
+          <div class="brand">Aqara</div>
+          <div>G4 Doorbell</div>
+        </div>
+      </a>
+
+      <a class="product-card" href="#" target="_blank">
+        <div class="product-image">
+          <img src="https://goodaesthetic.club/wp-content/uploads/2023/08/raico-headphone-stand.png" alt="Walnut Headphone Stand">
+        </div>
+        <div class="product-info">
+          <div class="brand">RAICO</div>
+          <div>Walnut Headphone Stand</div>
+        </div>
+      </a>
+
+      <a class="product-card" href="#" target="_blank">
+        <div class="product-image">
+          <img src="https://goodaesthetic.club/wp-content/uploads/2023/08/flameless-candle-lamp.png" alt="Flameless Candle Warmer">
+        </div>
+        <div class="product-info">
+          <div class="brand">—</div>
+          <div>Flameless Candle Warmer</div>
+        </div>
+      </a>
+
+      <a class="product-card" href="#" target="_blank">
+        <div class="product-image">
+          <img src="https://goodaesthetic.club/wp-content/uploads/2023/08/xiaomi-screwdriver.png" alt="Precision Screwdriver Set">
+        </div>
+        <div class="product-info">
+          <div class="brand">Xiaomi</div>
+          <div>Precision Screwdriver Set</div>
+        </div>
+      </a>
+
+      <a class="product-card" href="#" target="_blank">
+        <div class="product-image">
+          <img src="https://goodaesthetic.club/wp-content/uploads/2023/08/crassula-ovata.png" alt="Crassula Ovata">
+        </div>
+        <div class="product-info">
+          <div class="brand">Ikea</div>
+          <div>Crassula Ovata</div>
+        </div>
+      </a>
+
+      <a class="product-card" href="#" target="_blank">
+        <div class="product-image">
+          <img src="https://goodaesthetic.club/wp-content/uploads/2023/08/keepsake-box.png" alt="Hand Carved Wooden Box">
+        </div>
+        <div class="product-info">
+          <div class="brand">Ajuny</div>
+          <div>Hand Carved Wooden Box</div>
+        </div>
+      </a>
+
+      <a class="product-card" href="#" target="_blank">
+        <div class="product-image">
+          <img src="https://goodaesthetic.club/wp-content/uploads/2023/08/huskee.png" alt="Huskee Cappuccino Cups">
+        </div>
+        <div class="product-info">
+          <div class="brand">Huskee</div>
+          <div>Huskee Cappuccino Cups</div>
+        </div>
+      </a>
+
+      <a class="product-card" href="#" target="_blank">
+        <div class="product-image">
+          <img src="https://goodaesthetic.club/wp-content/uploads/2023/08/anker-543.png" alt="65W 4-Port Charger">
+        </div>
+        <div class="product-info">
+          <div class="brand">Anker</div>
+          <div>65W 4-Port Charger</div>
+        </div>
+      </a>
+
+      <a class="product-card" href="#" target="_blank">
+        <div class="product-image">
+          <img src="https://goodaesthetic.club/wp-content/uploads/2023/08/keychron-k3.png" alt="Keychron K3">
+        </div>
+        <div class="product-info">
+          <div class="brand">Keychron</div>
+          <div>Keychron K3</div>
+        </div>
+      </a>
+
+      <a class="product-card" href="#" target="_blank">
+        <div class="product-image">
+          <img src="https://goodaesthetic.club/wp-content/uploads/2023/08/raico-desk-tray.png" alt="Desk Tray Drawer">
+        </div>
+        <div class="product-info">
+          <div class="brand">RAICO</div>
+          <div>Desk Tray Drawer</div>
+        </div>
+      </a>
+
+      <a class="product-card" href="#" target="_blank">
+        <div class="product-image">
+          <img src="https://goodaesthetic.club/wp-content/uploads/2023/08/niche-zero.png" alt="Niche Zero Coffee Grinder">
+        </div>
+        <div class="product-info">
+          <div class="brand">Niche Coffee</div>
+          <div>Niche Zero Coffee Grinder</div>
+        </div>
+      </a>
+
+      <a class="product-card" href="#" target="_blank">
+        <div class="product-image">
+          <img src="https://goodaesthetic.club/wp-content/uploads/2023/08/card-wallet.png" alt="Classic Card Wallet">
+        </div>
+        <div class="product-info">
+          <div class="brand">Native Union</div>
+          <div>Classic Card Wallet</div>
+        </div>
+      </a>
+
     </main>
 
-    <!-- Footer Section -->
-    <footer class="site-footer">
-        <p>Curated by Dale-Anthony</p>
-        <p class="disclosure">Disclosure: Some product links are affiliate-based.</p>
+
+    <!-- Footer -->
+    <footer class="footer">
+
+      <div>
+        <p>
+          Designed, built & curated by
+          <a href="#">Dale-Anthony</a>
+        </p>
+
+        <span>
+          Disclosure: some product links are affiliate-based.
+          I only recommend products I personally use or highly rate.
+        </span>
+      </div>
+
+      <div class="footer-right">
+        <a href="#">About</a>
+        <small>V1.2</small>
+      </div>
+
     </footer>
+
+  </div>
 
 </body>
 </html>
+```

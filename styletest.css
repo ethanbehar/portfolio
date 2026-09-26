@@ -1,0 +1,124 @@
+/* --- Global Resets & Typography --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #fcfcfc; /* Off-white background for premium feel */
+    color: #1a1a1a;
+    padding: 2rem;
+    line-height: 1.5;
+}
+
+/* --- Header & Navigation --- */
+.site-header {
+    max-width: 1200px;
+    margin: 0 auto 3rem auto;
+    text-align: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    margin-bottom: 0.5rem;
+}
+
+.tagline {
+    font-size: 1rem;
+    color: #666;
+    font-weight: 300;
+    margin-bottom: 2rem;
+}
+
+.category-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.category-nav a {
+    text-decoration: none;
+    color: #888;
+    font-size: 0.9rem;
+    font-weight: 400;
+    transition: color 0.2s ease;
+}
+
+.category-nav a:hover, 
+.category-nav a.active {
+    color: #1a1a1a;
+}
+
+/* --- Responsive Product Grid --- */
+.grid-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    /* Automatically creates columns based on available width */
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 2.5rem;
+}
+
+/* --- Individual Product Cards --- */
+.product-card {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.2s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-4px); /* Subtle lift on hover */
+}
+
+/* Grey image block to replicate card layout */
+.image-placeholder {
+    width: 100%;
+    aspect-ratio: 4 / 3; 
+    background-color: #f0f0f0; 
+    border-radius: 6px;
+}
+
+.product-info {
+    padding: 1rem 0.25rem;
+}
+
+.brand {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #999;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 0.25rem;
+}
+
+.product-name {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #222;
+}
+
+/* --- Footer --- */
+.site-footer {
+    max-width: 1200px;
+    margin: 5rem auto 0 auto;
+    text-align: center;
+    border-top: 1px solid #eee;
+    padding-top: 2rem;
+    font-size: 0.85rem;
+    color: #888;
+}
+
+.disclosure {
+    font-size: 0.75rem;
+    margin-top: 0.5rem;
+    font-style: italic;
+}
